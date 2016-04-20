@@ -337,7 +337,7 @@
 				GCC_PREFIX_HEADER = "iBeaconDemo/iBeaconDemo-Prefix.pch";
 				INFOPLIST_FILE = "iBeaconDemo/iBeaconDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.amap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iBeaconDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -354,7 +354,7 @@
 				GCC_PREFIX_HEADER = "iBeaconDemo/iBeaconDemo-Prefix.pch";
 				INFOPLIST_FILE = "iBeaconDemo/iBeaconDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.amap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iBeaconDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
