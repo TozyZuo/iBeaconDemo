@@ -21,6 +21,7 @@
     self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
 
+    [BeaconManager requestAuthorization];
     [BeaconManagerInstance() start];
     
     return YES;

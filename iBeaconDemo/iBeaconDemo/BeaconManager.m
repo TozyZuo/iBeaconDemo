@@ -36,6 +36,19 @@ BeaconManager *BeaconManagerInstance()
     return _sharedManager;
 }
 
++ (void)requestAuthorization
+{
+    BOOL enable = [CLLocationManager locationServicesEnabled];
+    int status = [CLLocationManager authorizationStatus];
+    if (!enable || status < 3) {
+        CLLocationManager *manager = BeaconManagerInstance().locationManager;
+        if([manager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+            [manager requestAlwaysAuthorization];
+            [manager requestWhenInUseAuthorization];
+        }
+    }
+}
+
 - (id)init
 {
     if (self = [super init]) {

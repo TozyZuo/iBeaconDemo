@@ -16,6 +16,7 @@
 BeaconManager *BeaconManagerInstance();
 + (BeaconManager *)sharedManager;
 
++ (void)requestAuthorization;
 - (void)start;
 
 @end

@@ -14,9 +14,9 @@ void LMLogv(NSString *format, va_list args)
 {
     NSDate *now = [NSDate date];
 
-    static NSUInteger c = NSSecondCalendarUnit  |
-                          NSHourCalendarUnit    |
-                          NSMinuteCalendarUnit  ;
+    static NSUInteger c = NSCalendarUnitSecond  |
+                          NSCalendarUnitHour    |
+                          NSCalendarUnitMinute  ;
 
 	NSDateComponents *components = [[NSCalendar currentCalendar] components:c fromDate:now];
 

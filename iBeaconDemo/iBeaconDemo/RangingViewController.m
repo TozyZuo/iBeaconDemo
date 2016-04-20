@@ -44,6 +44,10 @@
     [self toggleLogAction:nil];
 
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update:) userInfo:nil repeats:YES];
+
+    CGRect frame = self.consoleView.frame;
+    frame.size.width = [UIScreen mainScreen].applicationFrame.size.width;
+    self.consoleView.frame = frame;
 }
 
 #pragma mark - Action
@@ -263,7 +267,7 @@
     {
         distance = @"unknown";
     }
-    ((UILabel *)[cell viewWithTag:2]).text = [NSString stringWithFormat:@"major:%@ minor:%@ 距离:%@", beacon.major, beacon.minor, distance];
+    ((UILabel *)[cell viewWithTag:2]).text = [NSString stringWithFormat:@"major:%@ minor:%@ distance:%@", beacon.major, beacon.minor, distance];
     
     return cell;
 }
